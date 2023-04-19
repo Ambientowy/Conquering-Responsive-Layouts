@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cream: #F3EED9;
+    --chocolate: #824936;
+    --blackish: #222C2A;
+
+    --hero-height: 660px;
+    --cont-size: 1128px;
+
+    --playfair: 'Playfair Display', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 21px;
+    font-family: var(--roboto);
+    line-height: 1.4;
+}
+
+h1, h2 {
+    font-family: var(--playfair);
+    font-weight: 900;
+}
+
+h1 {
+    color: var(--chocolate);
+    font-size: 60px;
+    line-height: 1;
+}
+
+h2 {
+    color: var(--cream);
+    font-size: 36px;
+}
+
+.container {
+    width: 80%;
+    max-width: var(--cont-size);
+}
+
+#hero {
+    background-color: var(--cream);
+    min-height: var(--hero-height);
+}
+
+.centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero .container {
+    width: 66%;
+    max-width: var(--cont-size);
+}
+
+#hero__content {
+    text-align: center;
+}
+
+#hero__content p {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--blackish);
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+#quality_designs {
+    margin: 5rem 0;
+}
+
+#quality_designs__header {
+    color: var(--chocolate);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#quality_designs__content__text {
+    font-weight: 400;
+}
+
+#quality_designs__content__text--left, #quality_designs__content__text--right, #custom_for_you__content__text, #created_with_care__content__text, #custom_for_you__content__image, #created_with_care__content__image {
+    width: 45%;
+}
+
+.margining {
+    margin: 3rem 0;
+}
+
+.flexing {
+    display: flex;
+    gap: 5%;
+}
+
+#custom_for_you {
+    background-color: var(--blackish);
+    color: white;
+}
+
+#created_with_care {
+    background-color: var(--chocolate);
+    color: white;
+}
